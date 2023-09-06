@@ -11,7 +11,7 @@
     <default>
         <hgati_newsletter>
             <configuration>
-                <expiration_delay_expression>+30days</expiration_delay_expression>
+                <expiration_delay_expression>+14days</expiration_delay_expression>
             </configuration>
         </hgati_newsletter>
         <newsletter>
