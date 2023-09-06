@@ -8,12 +8,9 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="hgati" translate="label" sortOrder="10">
-            <label>Hgati</label>
-        </tab>
-        <section id="hgati_newsletter" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-            <label>NewsletterCoupon</label>
-            <tab>hgati</tab>
+        <section id="hgati_newsletter" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Newsletter Coupon</label>
+            <tab>customer</tab>
             <resource>Hgati_NewsletterCoupon::system_config</resource>
             <group id="configuration" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Configuration</label>
