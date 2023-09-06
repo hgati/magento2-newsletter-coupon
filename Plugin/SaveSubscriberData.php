@@ -146,7 +146,6 @@ class SaveSubscriberData
              * @var \Magento\SalesRule\Model\Coupon $coupon
              */
             $coupon = $this->salesRule->acquireCoupon();
-            $coupon = strtoupper($coupon);
         }
         return $coupon;
     }
