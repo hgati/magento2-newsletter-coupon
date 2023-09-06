@@ -25,7 +25,7 @@
                 </field>
                 <field id="expiration_delay_expression" translate="label,comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Coupon Expiration Delay</label>
-                    <comment>Insert Coupon Delay Expiration Expression: https://www.php.net/manual/en/datetime.formats.relative.php</comment>
+                    <comment>Insert Coupon Delay Expiration Expression: https://www.php.net/manual/en/datetime.formats.php</comment>
                     <backend_model>Hgati\NewsletterCoupon\Model\Config\Backend\DateTimeFormat</backend_model>
                 </field>
             </group>
