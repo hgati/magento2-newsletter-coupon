@@ -2,19 +2,19 @@
 <!--
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="dadolun" translate="label" sortOrder="10">
-            <label>Dadolun</label>
+        <tab id="hgati" translate="label" sortOrder="10">
+            <label>Hgati</label>
         </tab>
-        <section id="dadolun_newsletter" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+        <section id="hgati_newsletter" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>NewsletterCoupon</label>
-            <tab>dadolun</tab>
-            <resource>Dadolun_NewsletterCoupon::system_config</resource>
+            <tab>hgati</tab>
+            <resource>Hgati_NewsletterCoupon::system_config</resource>
             <group id="configuration" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Configuration</label>
                 <field id="coupon_generation_enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -24,12 +24,12 @@
                 <field id="salesrule_id" translate="label,comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Used Sales Rule</label>
                     <comment>Allowed Sales Rules must have "Specific" coupon type and "Use Auto Generation" setted</comment>
-                    <source_model>Dadolun\NewsletterCoupon\Model\Config\Source\AutoTypeSalesRule</source_model>
+                    <source_model>Hgati\NewsletterCoupon\Model\Config\Source\AutoTypeSalesRule</source_model>
                 </field>
                 <field id="expiration_delay_expression" translate="label,comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Coupon Expiration Delay</label>
                     <comment>Insert Coupon Delay Expiration Expression: https://www.php.net/manual/en/datetime.formats.relative.php</comment>
-                    <backend_model>Dadolun\NewsletterCoupon\Model\Config\Backend\DateTimeFormat</backend_model>
+                    <backend_model>Hgati\NewsletterCoupon\Model\Config\Backend\DateTimeFormat</backend_model>
                 </field>
             </group>
         </section>

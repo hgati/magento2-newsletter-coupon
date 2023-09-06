@@ -1,24 +1,24 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 
-namespace Dadolun\NewsletterCoupon\Plugin;
+namespace Hgati\NewsletterCoupon\Plugin;
 
-use Dadolun\NewsletterCoupon\Api\SubscriberInformationRepositoryInterface;
-use Dadolun\NewsletterCoupon\Model\SubscriberInformation;
-use Dadolun\NewsletterCoupon\Api\Data\SubscriberInformationInterfaceFactory;
+use Hgati\NewsletterCoupon\Api\SubscriberInformationRepositoryInterface;
+use Hgati\NewsletterCoupon\Model\SubscriberInformation;
+use Hgati\NewsletterCoupon\Api\Data\SubscriberInformationInterfaceFactory;
 use Magento\Newsletter\Model\Subscriber;
-use Dadolun\NewsletterCoupon\Helper\ConfigurationHelper;
+use Hgati\NewsletterCoupon\Helper\ConfigurationHelper;
 use Magento\SalesRule\Model\RuleRepository;
 use Magento\SalesRule\Api\CouponRepositoryInterface;
 use Magento\SalesRule\Model\Rule as SalesRule;
 
 /**
  * Class SaveSubscriberData
- * @package Dadolun\NewsletterCoupon\Plugin
+ * @package Hgati\NewsletterCoupon\Plugin
  */
 class SaveSubscriberData
 {

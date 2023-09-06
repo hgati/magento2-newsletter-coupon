@@ -1,17 +1,17 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 
-namespace Dadolun\NewsletterCoupon\Model\Config\Source;
+namespace Hgati\NewsletterCoupon\Model\Config\Source;
 
 use \Magento\SalesRule\Model\ResourceModel\Rule\CollectionFactory as RuleCollectionFactory;
 
 /**
  * Class AutoTypeSalesRule
- * @package Dadolun\NewsletterCoupon\Model\Source
+ * @package Hgati\NewsletterCoupon\Model\Source
  */
 class AutoTypeSalesRule implements \Magento\Framework\Option\ArrayInterface
 {

@@ -1,25 +1,25 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 
-namespace Dadolun\NewsletterCoupon\Helper;
+namespace Hgati\NewsletterCoupon\Helper;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Store\Model\ScopeInterface;
 
 /**
  * Class ConfigurationHelper
- * @package Dadolun\NewsletterCoupon\Helper
+ * @package Hgati\NewsletterCoupon\Helper
  */
 class ConfigurationHelper
 {
     /**
      * Module section
      */
-    const SECTION_MODULE = 'dadolun_newsletter';
+    const SECTION_MODULE = 'hgati_newsletter';
     /**
      * Configuration section
      */

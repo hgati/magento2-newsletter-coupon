@@ -1,15 +1,15 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 
-namespace Dadolun\NewsletterCoupon\Model\Config\Backend;
+namespace Hgati\NewsletterCoupon\Model\Config\Backend;
 
 /**
  * Class DateTimeFormat
- * @package Dadolun\NewsletterCoupon\Model\Config\Backend
+ * @package Hgati\NewsletterCoupon\Model\Config\Backend
  */
 class DateTimeFormat extends \Magento\Framework\App\Config\Value {
 

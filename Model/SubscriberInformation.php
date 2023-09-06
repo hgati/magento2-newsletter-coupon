@@ -1,25 +1,25 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 
-namespace Dadolun\NewsletterCoupon\Model;
+namespace Hgati\NewsletterCoupon\Model;
 
-use Dadolun\NewsletterCoupon\Api\Data\SubscriberInformationInterface;
+use Hgati\NewsletterCoupon\Api\Data\SubscriberInformationInterface;
 use Magento\Framework\Model\AbstractModel;
 use Magento\Newsletter\Model\SubscriberFactory;
 use Magento\SalesRule\Model\CouponRepository as SalesRuleCouponRepository;
-use Dadolun\NewsletterCoupon\Api\SubscriberInformationResourceInterface;
+use Hgati\NewsletterCoupon\Api\SubscriberInformationResourceInterface;
 use Magento\Framework\Model\Context;
 use Magento\Framework\Registry;
-use Dadolun\NewsletterCoupon\Model\ResourceModel\SubscriberInformation as SubscriberInformationResource;
-use Dadolun\NewsletterCoupon\Model\ResourceModel\SubscriberInformation\Collection as SubscriberInformationCollection;
+use Hgati\NewsletterCoupon\Model\ResourceModel\SubscriberInformation as SubscriberInformationResource;
+use Hgati\NewsletterCoupon\Model\ResourceModel\SubscriberInformation\Collection as SubscriberInformationCollection;
 
 /**
  * Class SubscriberInformation
- * @package Dadolun\NewsletterCoupon\Model
+ * @package Hgati\NewsletterCoupon\Model
  */
 class SubscriberInformation extends AbstractModel implements SubscriberInformationInterface
 {

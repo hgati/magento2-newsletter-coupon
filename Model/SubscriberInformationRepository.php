@@ -1,23 +1,23 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 
-namespace Dadolun\NewsletterCoupon\Model;
+namespace Hgati\NewsletterCoupon\Model;
 
-use Dadolun\NewsletterCoupon\Api\Data\SubscriberInformationInterfaceFactory;
-use Dadolun\NewsletterCoupon\Model\ResourceModel\SubscriberInformation\CollectionFactory as SubscriberInformationCollectionFactory;
-use Dadolun\NewsletterCoupon\Api\SubscriberInformationResourceInterface;
+use Hgati\NewsletterCoupon\Api\Data\SubscriberInformationInterfaceFactory;
+use Hgati\NewsletterCoupon\Model\ResourceModel\SubscriberInformation\CollectionFactory as SubscriberInformationCollectionFactory;
+use Hgati\NewsletterCoupon\Api\SubscriberInformationResourceInterface;
 use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\NoSuchEntityException;
-use Dadolun\NewsletterCoupon\Api\SubscriberInformationRepositoryInterface;
+use Hgati\NewsletterCoupon\Api\SubscriberInformationRepositoryInterface;
 use Magento\Customer\Api\CustomerRepositoryInterface;
 
 /**
  * Class SubscriberInformationRepository
- * @package Dadolun\CartInformation\Model
+ * @package Hgati\CartInformation\Model
  */
 class SubscriberInformationRepository implements SubscriberInformationRepositoryInterface
 {
@@ -97,7 +97,7 @@ class SubscriberInformationRepository implements SubscriberInformationRepository
     public function getBySubscriberId($subscriberId)
     {
         /**
-         * @var \Dadolun\NewsletterCoupon\Model\ResourceModel\SubscriberInformation\Collection $subscriberInformationCollection
+         * @var \Hgati\NewsletterCoupon\Model\ResourceModel\SubscriberInformation\Collection $subscriberInformationCollection
          */
         $subscriberInformationCollection = $this->subscriberInformationCollectionFactory->create();
         return $subscriberInformationCollection
@@ -112,7 +112,7 @@ class SubscriberInformationRepository implements SubscriberInformationRepository
     public function getBySubscriberEmail($subscriberEmail)
     {
         /**
-         * @var \Dadolun\NewsletterCoupon\Model\ResourceModel\SubscriberInformation\Collection $subscriberInformationCollection
+         * @var \Hgati\NewsletterCoupon\Model\ResourceModel\SubscriberInformation\Collection $subscriberInformationCollection
          */
         $subscriberInformationCollection = $this->subscriberInformationCollectionFactory->create();
         return $subscriberInformationCollection
@@ -128,7 +128,7 @@ class SubscriberInformationRepository implements SubscriberInformationRepository
     public function getByCouponId($couponId)
     {
         /**
-         * @var \Dadolun\NewsletterCoupon\Model\ResourceModel\SubscriberInformation\Collection $subscriberInformationCollection
+         * @var \Hgati\NewsletterCoupon\Model\ResourceModel\SubscriberInformation\Collection $subscriberInformationCollection
          */
         $subscriberInformationCollection = $this->subscriberInformationCollectionFactory->create();
         return $subscriberInformationCollection
@@ -137,16 +137,16 @@ class SubscriberInformationRepository implements SubscriberInformationRepository
     }
 
     /**
-     * @param \Dadolun\NewsletterCoupon\Model\SubscriberInformation $subscriberInformation
-     * @return \Dadolun\NewsletterCoupon\Model\SubscriberInformation|mixed
+     * @param \Hgati\NewsletterCoupon\Model\SubscriberInformation $subscriberInformation
+     * @return \Hgati\NewsletterCoupon\Model\SubscriberInformation|mixed
      * @throws CouldNotSaveException
      */
-    public function save(\Dadolun\NewsletterCoupon\Model\SubscriberInformation $subscriberInformation)
+    public function save(\Hgati\NewsletterCoupon\Model\SubscriberInformation $subscriberInformation)
     {
         try {
             $this->subscriberInformationResource->save($subscriberInformation);
             foreach ($this->marketingEmailIntegrations as $integration) {
-                if ($integration instanceof \Dadolun\NewsletterCoupon\Model\AbstractNewsletterCouponIntegration) {
+                if ($integration instanceof \Hgati\NewsletterCoupon\Model\AbstractNewsletterCouponIntegration) {
                     if ($subscriberInformation->getIsEnabled()) {
                         try {
                             /**
@@ -172,16 +172,16 @@ class SubscriberInformationRepository implements SubscriberInformationRepository
     }
 
     /**
-     * @param \Dadolun\NewsletterCoupon\Model\SubscriberInformation $subscriberInformation
+     * @param \Hgati\NewsletterCoupon\Model\SubscriberInformation $subscriberInformation
      * @return bool
      * @throws \Magento\Framework\Exception\StateException
      */
-    public function delete(\Dadolun\NewsletterCoupon\Model\SubscriberInformation $subscriberInformation)
+    public function delete(\Hgati\NewsletterCoupon\Model\SubscriberInformation $subscriberInformation)
     {
         try {
             $this->subscriberInformationResource->delete($subscriberInformation);
             foreach ($this->marketingEmailIntegrations as $integration) {
-                if ($integration instanceof \Dadolun\NewsletterCoupon\Model\AbstractNewsletterCouponIntegration) {
+                if ($integration instanceof \Hgati\NewsletterCoupon\Model\AbstractNewsletterCouponIntegration) {
                     $integration->deleteSubscriber($subscriberInformation);
                 }
             }

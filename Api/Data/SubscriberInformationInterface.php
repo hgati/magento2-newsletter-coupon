@@ -1,17 +1,17 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 
-namespace Dadolun\NewsletterCoupon\Api\Data;
+namespace Hgati\NewsletterCoupon\Api\Data;
 
 use Magento\Framework\Api\ExtensibleDataInterface;
 
 /**
  * Interface SubscriberCouponInterface
- * @package Dadolun\NewsletterCoupon\Api\Data
+ * @package Hgati\NewsletterCoupon\Api\Data
  */
 interface SubscriberInformationInterface extends ExtensibleDataInterface
 {
@@ -42,7 +42,7 @@ interface SubscriberInformationInterface extends ExtensibleDataInterface
 
     /**
      * @param $subscriberId
-     * @return \Dadolun\NewsletterCoupon\Api\Data\SubscriberInformationInterface
+     * @return \Hgati\NewsletterCoupon\Api\Data\SubscriberInformationInterface
      */
     public function setSubscriberId($subscriberId);
 
@@ -53,7 +53,7 @@ interface SubscriberInformationInterface extends ExtensibleDataInterface
 
     /**
      * @param string $email
-     * @return \Dadolun\NewsletterCoupon\Api\Data\SubscriberInformationInterface
+     * @return \Hgati\NewsletterCoupon\Api\Data\SubscriberInformationInterface
      */
     public function setSubscriberEmail($email);
 
@@ -69,7 +69,7 @@ interface SubscriberInformationInterface extends ExtensibleDataInterface
 
     /**
      * @param boolean $isSubscriptionActive
-     * @return \Dadolun\NewsletterCoupon\Api\Data\SubscriberInformationInterface
+     * @return \Hgati\NewsletterCoupon\Api\Data\SubscriberInformationInterface
      */
     public function setIsEnabled($isSubscriptionActive);
 
@@ -80,7 +80,7 @@ interface SubscriberInformationInterface extends ExtensibleDataInterface
 
     /**
      * @param $couponId
-     * @return \Dadolun\NewsletterCoupon\Api\Data\SubscriberInformationInterface
+     * @return \Hgati\NewsletterCoupon\Api\Data\SubscriberInformationInterface
      */
     public function setCouponId($couponId);
 

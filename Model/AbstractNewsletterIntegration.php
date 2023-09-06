@@ -1,16 +1,16 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
-namespace Dadolun\NewsletterCoupon\Model;
+namespace Hgati\NewsletterCoupon\Model;
 
-use Dadolun\NewsletterCoupon\Api\Data\SubscriberInformationInterface;
+use Hgati\NewsletterCoupon\Api\Data\SubscriberInformationInterface;
 
 /**
  * Class AbstractNewsletterCouponIntegration
- * @package Dadolun\NewsletterCoupon\Model
+ * @package Hgati\NewsletterCoupon\Model
  */
 class AbstractNewsletterCouponIntegration
 {

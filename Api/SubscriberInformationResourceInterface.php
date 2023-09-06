@@ -1,18 +1,18 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 
-namespace Dadolun\NewsletterCoupon\Api;
+namespace Hgati\NewsletterCoupon\Api;
 
 use Magento\Framework\DataObject;
 use Magento\Framework\Model\AbstractModel;
 
 /**
  * Interface SubscriberInformationResourceInterface
- * @package Dadolun\NewsletterCoupon\Api
+ * @package Hgati\NewsletterCoupon\Api
  */
 interface SubscriberInformationResourceInterface
 {

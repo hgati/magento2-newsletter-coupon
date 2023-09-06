@@ -1,21 +1,21 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 
-namespace Dadolun\NewsletterCoupon\Plugin;
+namespace Hgati\NewsletterCoupon\Plugin;
 
 use Magento\SalesRule\Model\CouponFactory;
 use Magento\Framework\Escaper;
 use Magento\Framework\Message\ManagerInterface as MessageManager;
-use Dadolun\NewsletterCoupon\Api\SubscriberInformationRepositoryInterface;
-use Dadolun\NewsletterCoupon\Helper\ConfigurationHelper;
+use Hgati\NewsletterCoupon\Api\SubscriberInformationRepositoryInterface;
+use Hgati\NewsletterCoupon\Helper\ConfigurationHelper;
 
 /**
  * Class CheckNewsletterCoupon
- * @package Dadolun\NewsletterCoupon\Plugin
+ * @package Hgati\NewsletterCoupon\Plugin
  */
 class CheckNewsletterCoupon
 {

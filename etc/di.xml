@@ -2,33 +2,33 @@
 <!--
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
 
     <!-- API REFERENCE -->
-    <preference for="Dadolun\NewsletterCoupon\Api\SubscriberInformationRepositoryInterface"
-                type="Dadolun\NewsletterCoupon\Model\SubscriberInformationRepository"/>
-    <preference for="Dadolun\NewsletterCoupon\Api\Data\SubscriberInformationInterface"
-                type="Dadolun\NewsletterCoupon\Model\SubscriberInformation"/>
-    <preference for="Dadolun\NewsletterCoupon\Api\SubscriberInformationResourceInterface"
-                type="Dadolun\NewsletterCoupon\Model\ResourceModel\SubscriberInformation"/>
+    <preference for="Hgati\NewsletterCoupon\Api\SubscriberInformationRepositoryInterface"
+                type="Hgati\NewsletterCoupon\Model\SubscriberInformationRepository"/>
+    <preference for="Hgati\NewsletterCoupon\Api\Data\SubscriberInformationInterface"
+                type="Hgati\NewsletterCoupon\Model\SubscriberInformation"/>
+    <preference for="Hgati\NewsletterCoupon\Api\SubscriberInformationResourceInterface"
+                type="Hgati\NewsletterCoupon\Model\ResourceModel\SubscriberInformation"/>
 
     <!-- PLUGINS -->
     <type name="Magento\Newsletter\Model\Subscriber">
-        <plugin name="dadolun_save_subscriber_information"
-                type="Dadolun\NewsletterCoupon\Plugin\SaveSubscriberData"/>
+        <plugin name="hgati_save_subscriber_information"
+                type="Hgati\NewsletterCoupon\Plugin\SaveSubscriberData"/>
     </type>
     <type name="Magento\Checkout\Controller\Cart\CouponPost">
-        <plugin name="dadolun_check_newsletter_coupon"
-                type="Dadolun\NewsletterCoupon\Plugin\CheckNewsletterCoupon"/>
+        <plugin name="hgati_check_newsletter_coupon"
+                type="Hgati\NewsletterCoupon\Plugin\CheckNewsletterCoupon"/>
     </type>
     <type name="Magento\Newsletter\Model\Subscriber">
-        <plugin name="dadolun_disable_newsletter_email"
-                type="Dadolun\NewsletterCoupon\Plugin\UpdateNewsletterEmailSending"/>
+        <plugin name="hgati_disable_newsletter_email"
+                type="Hgati\NewsletterCoupon\Plugin\UpdateNewsletterEmailSending"/>
     </type>
 
 </config>

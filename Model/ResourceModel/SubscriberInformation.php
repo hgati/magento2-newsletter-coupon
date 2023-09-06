@@ -1,18 +1,18 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 
-namespace Dadolun\NewsletterCoupon\Model\ResourceModel;
+namespace Hgati\NewsletterCoupon\Model\ResourceModel;
 
-use Dadolun\NewsletterCoupon\Api\SubscriberInformationResourceInterface;
+use Hgati\NewsletterCoupon\Api\SubscriberInformationResourceInterface;
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 
 /**
  * Class SubscriberInformation
- * @package Dadolun\NewsletterCoupon\Model\ResourceModel
+ * @package Hgati\NewsletterCoupon\Model\ResourceModel
  */
 class SubscriberInformation extends AbstractDb implements SubscriberInformationResourceInterface
 {

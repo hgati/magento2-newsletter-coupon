@@ -1,23 +1,23 @@
 <?php
 /**
  * @category    Magento 2
- * @package     Dadolun_NewsletterCoupon
- * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ * @package     Hgati_NewsletterCoupon
+ * @copyright   Copyright (c) 2020 Hgati (https://github.com/hgati)
  */
 
-namespace Dadolun\NewsletterCoupon\Plugin;
+namespace Hgati\NewsletterCoupon\Plugin;
 
-use Dadolun\NewsletterCoupon\Helper\ConfigurationHelper;
+use Hgati\NewsletterCoupon\Helper\ConfigurationHelper;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\Mail\Template\TransportBuilder;
 use Magento\Store\Model\StoreManagerInterface;
 use Magento\Framework\Translate\Inline\StateInterface;
-use Dadolun\NewsletterCoupon\Api\SubscriberInformationRepositoryInterface;
+use Hgati\NewsletterCoupon\Api\SubscriberInformationRepositoryInterface;
 use Magento\SalesRule\Api\CouponRepositoryInterface;
 
 /**
  * Class UpdateNewsletterEmailSending
- * @package Dadolun\NewsletterCoupon\Plugin
+ * @package Hgati\NewsletterCoupon\Plugin
  */
 class UpdateNewsletterEmailSending
 {
@@ -133,7 +133,7 @@ class UpdateNewsletterEmailSending
             }
 
             /**
-             * @var \Dadolun\NewsletterCoupon\Model\SubscriberInformation $subscriberInformation
+             * @var \Hgati\NewsletterCoupon\Model\SubscriberInformation $subscriberInformation
              */
             $subscriberInformation = $this->subscriberInformationRepository->getBySubscriberId($subject->getSubscriberId());
 
