@@ -1,4 +1,4 @@
-# Hgati_NewsletterCoupon module for Magento 2 <img src="https://avatars.githubusercontent.com/u/168457?s=40&v=4" alt="magento" />
+# Hgati_NewsletterCoupon module for Magento 2
 
 ## Features
 This module add features to Magento newsletter subscription
