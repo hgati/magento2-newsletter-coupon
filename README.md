@@ -1,5 +1,6 @@
 # Hgati_NewsletterCoupon module for Magento 2
-
+- Use [Mirasvit extended shopping cart rule with special promotion](https://mirasvit.com/magento-2-extended-shopping-cart-rules.html) instead of this extension. it's better.
+ 
 ## Features
 This module add features to Magento newsletter subscription
 - generate a coupon for each subscription (must be a "SPECIFIC" coupon type salesrule with "Use Auto Generation" enabled)
